@@ -1,0 +1,159 @@
+/* Селектор для body */
+body {
+  margin: 25px;
+  padding: 0;
+  background: rgb(226, 223, 223, 0.5);
+  background: url(sky.jpg);
+}
+
+/* Універсальний селектор */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Селектор для header */
+header {
+  padding: 20px;
+  background: linear-gradient(grey, white, grey);
+}
+
+/* Селектор для заголовка сайту */
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+/* Селектор для елемента main */
+main {
+  float: left;
+  max-width: 75%;
+}
+
+/* Селектор для side-menu всередині aside */
+aside {
+  float: right;
+  max-width: 25%;
+  min-width: 200px;
+  background-color: #e4e6e5;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  margin: 80px 0 0 20px;
+}
+
+/* Селектор для елементів li всередині side-menu */
+.side-menu li {
+  margin: 7px 0;
+  list-style: none;
+}
+
+/* Селектор для заголовка меню */
+#menu-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: black;
+}
+
+/* Селектор для посилань всередині li */
+.side-menu li a {
+  text-decoration: none;
+  color: steelblue;
+  padding: 2px;
+}
+
+/* Псевдо-клас для посилань при наведенні */
+.side-menu li a:hover {
+  color: turquoise;
+  font-weight: bold;
+}
+
+/* Селектор для h2 всередині main-content */
+.main-content h2 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: grey 2px 2px;
+}
+
+/* Селектор для параграфів всередині main-content */
+.main-content p {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: 20px;
+  color: #000;
+}
+
+/* Селектори для id-data="1" та id-data="2" */
+p[id-data="1"] {
+  background-color: #cdd4d6;
+}
+
+p[id-data="2"] {
+  background-color: #e6f4f8;
+}
+
+/* Псевдо-елемент для першої літери параграфів */
+.main-content p::first-letter {
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+/* Псевдо-елемент для першої лінії параграфів */
+.main-content p::first-line {
+  color: darkblue;
+}
+
+/* Селектор для p з дочірнім img */
+.main-content p img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  transition: all 3s;
+}
+
+/* Збільшення зображення при наведенні курсора */
+.main-content p img:hover {
+  transform: scale(2);
+}
+
+/* Селектор для футера */
+footer {
+  clear: both;
+  text-align: center;
+  height: 100px;
+  background: gray;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+/*---- Блок навігації ----*/
+
+nav {
+  margin: 0;
+  border-bottom: #adb1b2 solid 1px;
+  padding: 25px 5px;
+  background: #e4e6e5;
+  text-align: center;
+}
+
+nav a {
+  padding: 0px 32px;
+  border-right: #868B8F dotted 2px;
+  font-size: 18px;
+  color: #044368;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(115, 103, 124);
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+/*---- кінець блока навігації ----*/
